@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProduceDetInfo</class>
+ <widget class="QWidget" name="ProduceDetInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1027</width>
+    <height>681</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>生产数据</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>起始时间</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDateTimeEdit" name="startTime">
+              <property name="dateTime">
+               <datetime>
+                <hour>0</hour>
+                <minute>0</minute>
+                <second>0</second>
+                <year>2023</year>
+                <month>2</month>
+                <day>10</day>
+               </datetime>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>截止时间</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDateTimeEdit" name="endTime">
+              <property name="dateTime">
+               <datetime>
+                <hour>23</hour>
+                <minute>59</minute>
+                <second>59</second>
+                <year>2023</year>
+                <month>2</month>
+                <day>10</day>
+               </datetime>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="foreShift">
+              <property name="text">
+               <string>早班</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="nightShift">
+              <property name="text">
+               <string>晚班</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="searchData">
+              <property name="text">
+               <string>查 询</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/icons/find.png</normaloff>:/icons/find.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>通过管壳码查询</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>起始管壳码</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="startOutside">
+                <property name="text">
+                 <string>5230115900000</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>截止管壳码</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="endOutside">
+                <property name="text">
+                 <string>5230115900005</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>37</width>
+                <height>23</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="searchOutside">
+              <property name="text">
+               <string>查 询</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/icons/find.png</normaloff>:/icons/find.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="text">
+               <string>正常码查询</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="searchAll">
+              <property name="text">
+               <string>查询全部</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableView"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="detCount">
+           <property name="text">
+            <string>共0发</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="prepageBtn">
+           <property name="text">
+            <string>上一页</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="page">
+           <property name="text">
+            <string>1页/共1页</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="nextpageBtn">
+           <property name="text">
+            <string>下一页</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="deleteSelected">
+           <property name="text">
+            <string>删除选中</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="deleteAll">
+           <property name="text">
+            <string>删除所有</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="exportData">
+           <property name="text">
+            <string>导出</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_statis">
+      <attribute name="title">
+       <string>故障雷管</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <spacer name="queryError">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>查询</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableViewError"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
