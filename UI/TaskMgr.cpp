@@ -11,6 +11,9 @@
 #include <QTableWidgetItem>
 #include <QInputDialog>
 
+#include "DBManager.h"
+#include "model/DET_PRODUCE.h"
+
 #ifdef ENABLE_XLSS
 #include <QtXlsx>
 #endif
@@ -46,11 +49,19 @@ TaskMgr::TaskMgr(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::TaskMgr)
 {
-     ui->setupUi(this);
-
+    ui->setupUi(this);
+//    QSqlTableModel* model= DBManager::getInstance()->getSqlOptional<TriModel::DET_PRODUCE>()->getSqlModel();
+//    model->setSort(0,Qt::AscendingOrder);
+//    ui->tableView_2->setModel(model);
+//    ui->tableView_2->setEditTriggers(QAbstractItemView::NoEditTriggers);
 }
 
 TaskMgr::~TaskMgr()
 {
-     delete ui;
+    delete ui;
 }
+
+void TaskMgr::on_startProduce_released()
+{
+}
+

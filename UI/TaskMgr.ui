@@ -13,54 +13,48 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QTabWidget" name="tab1Widget">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1001</width>
-     <height>631</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <pointsize>12</pointsize>
-    </font>
-   </property>
-   <property name="currentIndex">
-    <number>0</number>
-   </property>
-   <widget class="QWidget" name="tab_2">
-    <attribute name="title">
-     <string>工具栏</string>
-    </attribute>
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <item>
-      <widget class="QGroupBox" name="groupBox_3">
-       <property name="title">
-        <string>生产任务管理</string>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_6">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tab1Widget">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>工具栏</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>生产任务管理</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <spacer name="horizontalSpacer_4">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>700</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="startProduce">
-            <property name="styleSheet">
-             <string notr="true">/*按钮*/
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>700</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="startProduce">
+              <property name="styleSheet">
+               <string notr="true">/*按钮*/
 QPushButton{
 	/*前景色*/
 	color:#e6e6e6;
@@ -100,29 +94,29 @@ QPushButton:default {
     border-color: navy; /* make the default button prominent */
 }
 </string>
-            </property>
-            <property name="text">
-             <string>开始生产</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_10">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pauseProductTask">
-            <property name="styleSheet">
-             <string notr="true">/*按钮*/
+              </property>
+              <property name="text">
+               <string>开始生产</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pauseProductTask">
+              <property name="styleSheet">
+               <string notr="true">/*按钮*/
 QPushButton{
 	/*前景色*/
 	color:#e6e6e6;
@@ -162,32 +156,32 @@ QPushButton:default {
     border-color: navy; /* make the default button prominent */
 }
 </string>
-            </property>
-            <property name="text">
-             <string>暂停生产</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_5">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="establishAssignment">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">/*按钮*/
+              </property>
+              <property name="text">
+               <string>暂停生产</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="establishAssignment">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">/*按钮*/
 QPushButton{
 	/*前景色*/
 	color:#e6e6e6;
@@ -227,29 +221,29 @@ QPushButton:default {
     border-color: navy; /* make the default button prominent */
 }
 </string>
-            </property>
-            <property name="text">
-             <string>创建任务</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_3">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton">
-            <property name="styleSheet">
-             <string notr="true">/*按钮*/
+              </property>
+              <property name="text">
+               <string>创建任务</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="styleSheet">
+               <string notr="true">/*按钮*/
 QPushButton{
 	/*前景色*/
 	color:#e6e6e6;
@@ -289,29 +283,29 @@ QPushButton:default {
     border-color: navy; /* make the default button prominent */
 }
 </string>
-            </property>
-            <property name="text">
-             <string>上传数据</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="refreshAssignment">
-            <property name="styleSheet">
-             <string notr="true">/*按钮*/
+              </property>
+              <property name="text">
+               <string>上传数据</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="refreshAssignment">
+              <property name="styleSheet">
+               <string notr="true">/*按钮*/
 QPushButton{
 	/*前景色*/
 	color:#e6e6e6;
@@ -351,29 +345,29 @@ QPushButton:default {
     border-color: navy; /* make the default button prominent */
 }
 </string>
-            </property>
-            <property name="text">
-             <string>刷新</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="searchAssignment">
-            <property name="styleSheet">
-             <string notr="true">/*按钮*/
+              </property>
+              <property name="text">
+               <string>刷新</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="searchAssignment">
+              <property name="styleSheet">
+               <string notr="true">/*按钮*/
 QPushButton{
 	/*前景色*/
 	color:#e6e6e6;
@@ -413,84 +407,84 @@ QPushButton:default {
     border-color: navy; /* make the default button prominent */
 }
 </string>
-            </property>
-            <property name="text">
-             <string>查 询</string>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>:/icons/find.png</normaloff>:/icons/find.png</iconset>
-            </property>
-           </widget>
+              </property>
+              <property name="text">
+               <string>查 询</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/icons/find.png</normaloff>:/icons/find.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
          </layout>
-        </item>
-       </layout>
-      </widget>
-     </item>
-     <item>
-      <widget class="QTableView" name="tableView_2"/>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_9">
-       <item>
-        <widget class="QLabel" name="detCount_2">
-         <property name="text">
-          <string>共0个任务</string>
-         </property>
         </widget>
        </item>
        <item>
-        <spacer name="horizontalSpacer_6">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
+        <widget class="QTableView" name="tableView_2"/>
        </item>
        <item>
-        <widget class="QPushButton" name="prepageBtn">
-         <property name="text">
-          <string>上一页</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="page">
-         <property name="text">
-          <string>1页/共1页</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="nextpageBtn">
-         <property name="text">
-          <string>下一页</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_7">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="deleteSelected_2">
-         <property name="styleSheet">
-          <string notr="true">/*按钮*/
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="detCount_2">
+           <property name="text">
+            <string>共0个任务</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="prepageBtn">
+           <property name="text">
+            <string>上一页</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="page">
+           <property name="text">
+            <string>1页/共1页</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="nextpageBtn">
+           <property name="text">
+            <string>下一页</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="deleteSelected_2">
+           <property name="styleSheet">
+            <string notr="true">/*按钮*/
 QPushButton{
 	/*前景色*/
 	color:#e6e6e6;
@@ -530,16 +524,16 @@ QPushButton:default {
     border-color: navy; /* make the default button prominent */
 }
 </string>
-         </property>
-         <property name="text">
-          <string>删除选中</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="deleteAll_2">
-         <property name="styleSheet">
-          <string notr="true">/*按钮*/
+           </property>
+           <property name="text">
+            <string>删除选中</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="deleteAll_2">
+           <property name="styleSheet">
+            <string notr="true">/*按钮*/
 QPushButton{
 	/*前景色*/
 	color:#e6e6e6;
@@ -579,32 +573,32 @@ QPushButton:default {
     border-color: navy; /* make the default button prominent */
 }
 </string>
-         </property>
-         <property name="text">
-          <string>删除所有</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_8">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="exportSelectedData">
-         <property name="styleSheet">
-          <string notr="true">/*按钮*/
+           </property>
+           <property name="text">
+            <string>删除所有</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="exportSelectedData">
+           <property name="styleSheet">
+            <string notr="true">/*按钮*/
 QPushButton{
 	/*前景色*/
 	color:#e6e6e6;
@@ -644,51 +638,53 @@ QPushButton:default {
     border-color: navy; /* make the default button prominent */
 }
 </string>
-         </property>
-         <property name="text">
-          <string>导出</string>
-         </property>
-        </widget>
+           </property>
+           <property name="text">
+            <string>导出</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="tab_statis_2">
-    <attribute name="title">
-     <string>查询</string>
-    </attribute>
-    <layout class="QVBoxLayout" name="verticalLayout_6">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_10">
+     </widget>
+     <widget class="QWidget" name="tab_statis_2">
+      <attribute name="title">
+       <string>查询</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
        <item>
-        <spacer name="queryError_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <spacer name="queryError_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>查询</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="text">
-          <string>查询</string>
-         </property>
-        </widget>
+        <widget class="QTableView" name="tableViewError_2"/>
        </item>
       </layout>
-     </item>
-     <item>
-      <widget class="QTableView" name="tableViewError_2"/>
-     </item>
-    </layout>
-   </widget>
-  </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

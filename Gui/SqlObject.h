@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QVariantMap>
 #include <QThread>
+#include <QSqlDatabase>
 
 ///stl
 #include <functional>
@@ -41,6 +42,8 @@ public:
     explicit SqlObject(QObject *parent = nullptr);
     virtual ~SqlObject();
 
+	void initialize();
+
     void setTable(const QString &table);
     QString table() const;
 
@@ -70,11 +73,17 @@ public:
 
     QString lastError() const;
 
+    QSqlDatabase getDataBase();
+    qint32 getPageIndex();
+    void getNextPage(QVariantList&);
+    void getPrevPage(QVariantList&);
+
     void queryAsync(const QString &query, const QVariantMap &binds, std::function<void (QVariantList result, const QString &error)> callback);
 
+    qlonglong getTotalPage();
 
     qint32 insert(const QString &extra = QString());
-    void update(const QString &where = QString(), const QVariantMap &binds = QVariantMap());
+    void update(const QString &where, const QVariantMap &binds = QVariantMap());
 
     QVariantList select();
     QVariantList select(const QString &where, const QVariantMap &binds) { return select("", where, "", binds); }
@@ -111,7 +120,6 @@ protected:
     QVariantMap prepareBinds(const QVariantMap &binds) const;
 
 private:
-    void initialize();
     Core *init(const QString &forceConnectionName = QString());
     void refreshKey();
 

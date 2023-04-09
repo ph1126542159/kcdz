@@ -18,6 +18,9 @@ public:
     ~TaskMgr();
 
 
+private slots:
+    void on_startProduce_released();
+
 private:
     Ui::TaskMgr *ui;
 };

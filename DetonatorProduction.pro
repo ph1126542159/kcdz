@@ -2,7 +2,7 @@ QT       += core gui sql network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++17
+CONFIG += c++17 no_batch
 
 #DEFINES += ENABLE_XLSS
 if(contains(DEFINES, ENABLE_XLSS)){
@@ -18,19 +18,22 @@ SOURCES += \
     UI/ProductionSet.cpp \
     UI/SerialPortSet.cpp \
     UI/TaskMgr.cpp \
-    TableOptional.cpp \
-    main.cpp
+    main.cpp \
+    model/DET_PRODUCE.cpp \
+    model/productDetData.cpp
 
 HEADERS += \
     DBManager.h \
     GlobalSetting.h \
+    TableOptional.h \
     UI/LogWidget.h \
     UI/MainWindow.h \
     UI/ProduceDetInfo.h \
     UI/ProductionSet.h \
     UI/SerialPortSet.h \
     UI/TaskMgr.h \
-    TableOptional.h
+    model/DET_PRODUCE.h \
+    model/productDetData.h
 
 FORMS += \
     UI/LogWidget.ui \

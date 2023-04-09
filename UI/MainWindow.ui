@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1454</width>
-    <height>744</height>
+    <width>1195</width>
+    <height>685</height>
    </rect>
   </property>
   <property name="font">
@@ -227,7 +227,7 @@ color: rgb(0, 166, 0);</string>
                <second>0</second>
                <year>1999</year>
                <month>12</month>
-               <day>25</day>
+               <day>23</day>
               </datetime>
              </property>
              <property name="displayFormat">
@@ -521,7 +521,7 @@ border-radius:0px
     <item row="0" column="1">
      <widget class="QTabWidget" name="productTabWidget">
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="TaskMgr" name="tab_5">
        <attribute name="title">
@@ -1170,7 +1170,7 @@ color: rgb(0, 170, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1454</width>
+     <width>1195</width>
      <height>31</height>
     </rect>
    </property>

@@ -208,7 +208,7 @@ LONG ApplicationCrashHandler(EXCEPTION_POINTERS* pException)
     if(ofs.is_open()){
         // 输出Crash信息
         auto tt = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
-        auto time_tm = std::localtime(&tt);
+        auto time_tm = ::localtime(&tt);
         char strTime[25] = { 0 };
         sprintf(strTime, "%d-%02d-%02d %02d:%02d:%02d", time_tm->tm_year + 1900,
                 time_tm->tm_mon + 1, time_tm->tm_mday, time_tm->tm_hour,
